@@ -129,20 +129,20 @@
             update_cache: yes 
             state: present
         loop: 
-            - php-cli
-            - php-common
-            - php-mbstring
-            - php-gd
-            - php-intl
-            - php-xml
-            - php-mysql
-            - php-zip
-            - php-curl
-            - php-xmlrpc
-            - libapache2-mod-php
-            - php-gd
-            - php-zip
-            - php-curl
+            - php7.3-cli
+            - php7.3-common
+            - php7.3-mbstring
+            - php7.3-gd
+            - php7.3-intl
+            - php7.3-xml
+            - php7.3-mysql
+            - php7.3-zip
+            - php7.3-curl
+            - php7.3-xmlrpc
+            - libapache2-mod-php7.3
+            - php7.3-gd
+            - php7.3-zip
+            - php7.3-curl
         when:
             - os_check.stdout | regex_search("Ubuntu")
 
@@ -179,7 +179,7 @@
             - os_check.stdout | regex_search("CentOS Linux 8")
 
     -   name: Enable remi repo - CentOS 7
-        command: yum-config-manager --enable remi-php74
+        command: yum-config-manager --enable remi-php73
         when: 
             - os_check.stdout | regex_search("CentOS Linux 7")
 

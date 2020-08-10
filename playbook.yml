@@ -1,8 +1,8 @@
 - hosts: localhost
   connection: local
   vars:
-    php_version: '7.4'
-    php_default_version_debian: '7.4'
+    php_version: '7.3'
+    php_default_version_debian: '7.3'
     mautic_version: 3.0.2
     # mysql_databases: 
     #     - name: joomla
