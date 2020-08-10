@@ -12,7 +12,7 @@
     #       password: joomla
     #       priv: joomla.*:ALL
 
-    # php_memory_limit: "512M"
+    php_memory_limit: "512M"
     # php_upload_max_filesize: "256M"
     # php_post_max_size: "256M"
     # php_output_buffering: "Off"

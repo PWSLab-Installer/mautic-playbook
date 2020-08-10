@@ -210,6 +210,7 @@
         file:
             path: /var/www/html/mautic
             recurse: yes
+            group: www-data
             owner: www-data
             mode: '0777'
         when:
@@ -219,6 +220,7 @@
         file:
             path: /var/www/html/mautic
             recurse: yes
+            group: apache
             owner: apache
             mode: '0777'
         when:
